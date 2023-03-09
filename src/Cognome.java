@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-// Chiamare la classe col proprio cognome
-public class MainClass
+public class Cognome
 {
 	static Scanner in = new Scanner(System.in);
-	
+
 	public static void main(String[] args)
 	{
 		while(true)
@@ -13,31 +12,49 @@ public class MainClass
 			int scelta = Integer.parseInt(in.nextLine());
 			switch(scelta)
 			{
-				//aggiungere, togliere casi a seconda delle proprie scelte
-				case 1:
-					//Inserire metodo statico
+			case 1:
 				break;
-				case 2:
-					//Inserire metodo statico
+			case 2:
 				break;
-				case 3:
-					//Inserire metodo statico
+			case 3:
 				break;
-				default:
-					System.out.println("Scelta errata, riprova!");
+			default:
+				System.out.println("Scelta errata, riprova!");
 
 			}
 		}
 	}
 	static void stampaMenu()
 	{
-		// Modificare il men√π secondo le proprie scelte
 		System.out.println("1 - Es n. * - Titolo es. *");
 		System.out.println("2 - Es n. * - Titolo es. *");
 		System.out.println("3 - Es n. * - Titolo es. *");
 		System.out.println("4 - Es n. * - Titolo es. *");
 		System.out.println("5 - Es n. * - Titolo es. *");
 	}
-	
-	// Aggiungere qui i metodi statici relativi agli esercizi scelti
+	public static double[] esarray()
+	{
+		// scegliere numero da cui Ë compost' un array
+		int a=Integer.parseInt(in.nextLine());;
+		//inizializzare array
+		double [] array1= new double [a];
+		for (int i= array1.length; i<=0;i--)
+		{
+			// inserire numeri double dentro array
+			array1[i] = (double)(Math.random()*a)+1;
+		}
+		// stampa contenuto array
+		System.out.print(array1[a]);
+		return array1;
+	}
+
+	static void prodottoarray()
+	{
+		int b = Integer.parseInt(in.nextLine());
+        double [] array2 = new double [b];
+        for (int i= array2.length;i<=0;i --)
+        {
+         array2 [i] = (double)(Math.random()*b)+1;	
+        }
+	}
 }
